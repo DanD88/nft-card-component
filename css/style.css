@@ -1,0 +1,132 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --Main-BG: hsl(217, 54%, 11%); 
+    --Card-BG: hsl(216, 50%, 16%);
+    --Line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img { 
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-weight: 300;
+}
+
+body {
+    background-color: var(--Main-BG);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container .card { 
+    background-color: var(--Card-BG);
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.container .card img {
+    width: 242px;
+    height: 242px;
+    border-radius: 10px;
+}
+
+.container .card h3 {
+    color: var(--White);
+    padding: 10px 0;
+}
+
+.container .card p {
+    color: var(--soft-blue);
+    font-size: 18px;
+}
+
+
+.card ul {
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--Line);
+}
+
+.card ul li {
+    display: flex;
+    align-items: center;
+    color: var(--cyan);
+}
+
+.container .card  ul li img {
+    margin-right: 0.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+.creator-section {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 2rem;
+}
+
+.container .creator-section p {
+    padding: 0.5rem;
+}
+
+.container .creator-section p:hover {
+    color: var(--soft-blue);
+}
+
+.container .creator-section img{
+    /* width: 3.5rem; */
+    border: 2px solid var(--White);
+    border-radius: 50%;
+    /* padding-top: 1rem; */
+    width: 2.5rem;
+    height: 2.5rem; 
+}
+
+.container .creator-section img:hover {
+    cursor: pointer;
+    border: 2px solid var(--cyan);
+}
+
+.attribution {
+    font-size: 16px;
+    text-align: center;
+    color: var(--cyan);
+    margin-bottom: 1rem;
+}
+
+.attribution a {
+    color: var(--soft-blue);
+}
+
+@media (min-width: 500px) {
+    .card {
+        width: 450px;
+        margin: 0 auto 1rem;
+    }
+}
+  
